@@ -73,7 +73,7 @@ public class Main {
                 System.out.println("==================================");
                 System.out.println("RECEIPT");
                 System.out.println("Customer Name:" + " " + customer);
-                System.out.println("Items in Cart:" + " " + (counter += 2));
+                System.out.println("Items in Cart:" + " " + (counter += 3));
                 System.out.println("1st Item Price:" + " " + price1);
                 System.out.println("2nd Item Price:" + " " + price2);
                 System.out.println("3rd Item Price:" + " " + price3);
