@@ -25,9 +25,9 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         /* System.out.println("Input number:");
-        int num1 = in.nextInt();
+        int numm = in.nextInt();
 
-        switch (num1) {
+        switch (numm) {
             case 1:
                 System.out.println("Burger");
                 break;
@@ -58,13 +58,6 @@ public class Main {
             default:
                 System.out.println("Item not found");
                 break;
-        } */
-
-        /* int number = 10;
-        for(int i = 0; i < number; i++){
-            if(i == 6)
-                System.out.println(i);
-                continue;
         }
 
         System.out.println("Enter number 1:");
@@ -79,7 +72,7 @@ public class Main {
         int numFin = in.nextInt();
         for(int mult = 1 ; mult <= 10; mult++){
             System.out.println(numFin + "x" + mult + "=" + calcMultTable(numFin, mult));
-        } */
+        }
 
         int secret = 7;
         int guess;
@@ -96,9 +89,20 @@ public class Main {
         } while (guess != secret);
 
         System.out.println("Correct! You guessed the number.");
-        in.close();
+        in.close(); */
 
-        /* int customer = 0;
+        int whi = -1;
+        int whiSum = 0;
+
+        while (whi != 0){
+            System.out.println("Enter number:");
+            whi = in.nextInt();
+            whiSum += whi;
+
+        }
+        System.out.println("The sum is" + " " + whiSum);
+
+        int customer = 0;
         do {
             System.out.println("MENU:");
             System.out.println("1. Burger - ₱80.00");
@@ -129,7 +133,7 @@ public class Main {
                     System.out.println("Invalid options, enter again.\n");
                     break;
             }
-        } while (customer >= 5); */
+        } while (customer >= 5);
 
 
     }
