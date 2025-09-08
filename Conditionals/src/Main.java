@@ -1,6 +1,26 @@
 import java.util.Scanner;
 
 public class Main {
+
+    public static int calcSum(int x, int y){
+
+        int result = x + y;
+        System.out.println(x + " + " + y + " = " + result);
+        return result;
+    }
+
+    public static int calcMultiply(int x, int y){
+
+        int product = x * y;
+        System.out.println(x + " * " + y + " = " + product);
+        return product;
+    }
+
+    public static int calcMultTable(int x, int y){
+        int prod = x * y;
+        return prod;
+    }
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -40,7 +60,45 @@ public class Main {
                 break;
         } */
 
-        int customer = 0;
+        /* int number = 10;
+        for(int i = 0; i < number; i++){
+            if(i == 6)
+                System.out.println(i);
+                continue;
+        }
+
+        System.out.println("Enter number 1:");
+        int num1 = in.nextInt();
+        System.out.println("Enter number 2:");
+        int num2 = in.nextInt();
+
+        System.out.println("Sum is" + " " + calcSum(num1, num2));
+        System.out.println("Product is" + " " + calcMultiply(num1, num2));
+
+        System.out.println("Input a number:");
+        int numFin = in.nextInt();
+        for(int mult = 1 ; mult <= 10; mult++){
+            System.out.println(numFin + "x" + mult + "=" + calcMultTable(numFin, mult));
+        } */
+
+        int secret = 7;
+        int guess;
+
+        do{
+            System.out.println("Guess a number between 1 and 10: ");
+            guess = in.nextInt();
+
+            if(guess < secret){
+                System.out.println("Too low! Try again.");
+            }else if (guess > secret) {
+                System.out.println("Too high! Try again.");
+            }
+        } while (guess != secret);
+
+        System.out.println("Correct! You guessed the number.");
+        in.close();
+
+        /* int customer = 0;
         do {
             System.out.println("MENU:");
             System.out.println("1. Burger - ₱80.00");
@@ -71,7 +129,7 @@ public class Main {
                     System.out.println("Invalid options, enter again.\n");
                     break;
             }
-        } while (customer >= 5);
+        } while (customer >= 5); */
 
 
     }
